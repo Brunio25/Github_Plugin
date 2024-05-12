@@ -91,5 +91,3 @@ class Github:
         reviews = requests.get(f"{pr_url}/reviews", headers=self.__headers)
         approves = filter(lambda r: r["state"] == "APPROVED", reviews.json())
         return list(map(lambda r: r["user"]["login"], approves))
-
-# Github().get_prs()

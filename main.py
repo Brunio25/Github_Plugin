@@ -122,7 +122,6 @@ class PreferencesUpdateEventListener(EventListener):
     def on_event(self, event: PreferencesUpdateEvent, extension: GithubExtension):
         preferences = extension.preferences.copy()
         preferences.update({event.id: event.new_value})
-        print(preferences)
         extension.github_controller = GithubController(hostname=preferences["hostname"],
                                                        org=preferences["org"],
                                                        access_token=preferences["access_token"],
