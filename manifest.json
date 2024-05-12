@@ -1,0 +1,54 @@
+{
+  "required_api_version": "2",
+  "name": "Github Pull Requests",
+  "description": "An extension to view Github Pull Requests in a convenient fashion",
+  "developer_name": "Brunio25",
+  "icon": "images/github_logo.png",
+  "options": {
+    "query_debounce": 0.00
+  },
+  "preferences": [
+    {
+      "id": "github",
+      "type": "keyword",
+      "name": "Github",
+      "description": "See Github Pull Requests",
+      "default_value": "gh"
+    },
+    {
+      "id": "hostname",
+      "type": "input",
+      "name": "Hostname",
+      "description": "Hostname fot the Github enterprise being used",
+      "default_value": "api.github.com"
+    },
+    {
+      "id": "access_token",
+      "type": "input",
+      "name": "Github access token",
+      "description": "The Personal Access Token to authenticate on Github API",
+      "default_value": ""
+    },
+    {
+      "id": "org",
+      "type": "input",
+      "name": "Github organization",
+      "description": "The Github organization for which you want to see Pull Requests",
+      "default_value": ""
+    },
+    {
+      "id": "user",
+      "type": "input",
+      "name": "Github user",
+      "description": "Your Github user",
+      "default_value": "user-1"
+    },
+    {
+      "id": "item_limit",
+      "type": "input",
+      "name": "Item limit",
+      "description": "Max number of items to display",
+      "default_value": 15
+    }
+  ]
+}
